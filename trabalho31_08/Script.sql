@@ -2,9 +2,9 @@ CREATE DATABASE livros;
 
 USE livros;
 
-CREATE USER 'libertass'@'%' IDENTIFIED BY 'Alunos4p';
+CREATE USER 'libertas'@'%' IDENTIFIED BY 'Alunos4p';
 
-GRANT ALL PRIVILEGES ON livros.* TO 'libertass'@'%';
+GRANT ALL PRIVILEGES ON livros.* TO 'libertas'@'%';
 
 FLUSH PRIVILEGES;
 
@@ -44,8 +44,6 @@ INSERT INTO autores (nome) VALUES ('J.R.R. Tolkien');
 INSERT INTO emprestimos (idlivros, dataEmprestimo, dataDevolucao) VALUES (8, '2024-08-01', '2024-08-15');
 INSERT INTO emprestimos (idlivros, dataEmprestimo, dataDevolucao) VALUES (9, '2024-08-05', '2024-08-20');
 INSERT INTO emprestimos (idlivros, dataEmprestimo, dataDevolucao) VALUES (10, '2024-08-10', '2024-08-25');
-
-select * from emprestimos
 
 -- consulta1 
 
